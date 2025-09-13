@@ -27,7 +27,7 @@ players_score = [0 for _ in range(players)]
 
 while max_score > max(players_score):
     for players_idx in range(players):
-        print(f"\nGracz o numerze {players_idx + 1} rozpoczął swoją turę!")
+        print(f"\nGracz o numerze --{players_idx + 1}-- rozpoczął swoją turę!")
         print(f"Twój ogólny wynik wynosi: {players_score[players_idx]}\n")
         current_score = 0
         while True:

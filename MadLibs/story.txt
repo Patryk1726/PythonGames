@@ -1,0 +1,10 @@
+One <time_of_day>, a <profession> was walking through the <place>.  
+They carried a <object> that shone with <light_adjective> glow.  
+
+Suddenly, a <creature> jumped out and made a <sound>.  
+The <profession> felt <emotion> but bravely stood tall.  
+
+With the help of a <companion>, they solved the mystery of the <mystery_object>.  
+At the end, everyone in the <place2> celebrated with <food>.  
+
+And from that day on, the <profession> was known as the <title>.  

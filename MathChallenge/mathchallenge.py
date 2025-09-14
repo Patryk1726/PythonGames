@@ -11,7 +11,7 @@ def generator():
     return exercise, result
 
 input('Press enter to start!')
-print('----------------------')
+print('-----------------------')
 start_time = time.time()
 
 fail = 0

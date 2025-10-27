@@ -106,6 +106,12 @@ def spin(balance):
         total_bet = lines * bet
         if total_bet > balance:
             print(f"You don't have enough to bet that amount, your current balance is ${balance}.")
+            ask = input('Press d to deposit money.')
+            if ask == 'd':
+                balance += deposit()
+                print(f"Your balance is ${balance}")
+            else:
+                return balance
         else:
             break
 
@@ -117,7 +123,8 @@ def spin(balance):
     print(f'You won ${winnings}.')
     if winnings > 0:
         print(f'On lines:', *winning_lines)
-    return winnings - total_bet
+    balance += winnings - total_bet
+    return balance
 def main():
     balance = deposit()
     while True:
@@ -125,6 +132,6 @@ def main():
         answer = input('Press enter to spin or q to quit.')
         if answer == 'q':
             break
-        balance += spin(balance)
+        balance = spin(balance)
     print(f'Your balance is ${balance}')
 main()
